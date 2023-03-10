@@ -1,0 +1,50 @@
+{
+  "repository": {},
+  "description": " ",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "NODE_ENV=production webpack --mode production",
+    "lint": "npm-run-all eslint stylelint",
+    "eslint": "eslint --ext .js --ignore-path ../.gitignore .",
+    "stylelint": "stylelint **/*.css",
+    "watch": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "alpinejs": "^3.5.2",
+    "autoprefixer": "^10.4.0",
+    "nprogress": "^0.2.0",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^9.1.0",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.1.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "npm-run-all": "^4.1.5",
+    "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.0",
+    "postcss-nested": "^5.0.6",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.21.0",
+    "tailwindcss": "^2.2.19",
+    "terser-webpack-plugin": "^5.2.5",
+    "vfile-location": "^4.0.1",
+    "webpack": "5.64.2",
+    "webpack-cli": "^4.9.1"
+  }
+}
